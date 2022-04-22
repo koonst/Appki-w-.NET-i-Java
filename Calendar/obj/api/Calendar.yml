@@ -1,0 +1,70 @@
+### YamlMime:ManagedReference
+items:
+- uid: Calendar
+  commentId: N:Calendar
+  id: Calendar
+  children:
+  - Calendar.App
+  - Calendar.MainWindow
+  - Calendar.MonthWindow
+  - Calendar.sp_helpdiagramdefinition_Result
+  - Calendar.sp_helpdiagrams_Result
+  - Calendar.Task
+  - Calendar.ToDoEntities
+  - Calendar.UserControlBlank
+  - Calendar.UserControlDays
+  langs:
+  - csharp
+  - vb
+  name: Calendar
+  nameWithType: Calendar
+  fullName: Calendar
+  type: Namespace
+  assemblies:
+  - Calendar
+references:
+- uid: Calendar.MonthWindow
+  commentId: T:Calendar.MonthWindow
+  name: MonthWindow
+  nameWithType: MonthWindow
+  fullName: Calendar.MonthWindow
+- uid: Calendar.sp_helpdiagramdefinition_Result
+  commentId: T:Calendar.sp_helpdiagramdefinition_Result
+  name: sp_helpdiagramdefinition_Result
+  nameWithType: sp_helpdiagramdefinition_Result
+  fullName: Calendar.sp_helpdiagramdefinition_Result
+- uid: Calendar.sp_helpdiagrams_Result
+  commentId: T:Calendar.sp_helpdiagrams_Result
+  name: sp_helpdiagrams_Result
+  nameWithType: sp_helpdiagrams_Result
+  fullName: Calendar.sp_helpdiagrams_Result
+- uid: Calendar.Task
+  commentId: T:Calendar.Task
+  name: Task
+  nameWithType: Task
+  fullName: Calendar.Task
+- uid: Calendar.UserControlBlank
+  commentId: T:Calendar.UserControlBlank
+  name: UserControlBlank
+  nameWithType: UserControlBlank
+  fullName: Calendar.UserControlBlank
+- uid: Calendar.UserControlDays
+  commentId: T:Calendar.UserControlDays
+  name: UserControlDays
+  nameWithType: UserControlDays
+  fullName: Calendar.UserControlDays
+- uid: Calendar.App
+  commentId: T:Calendar.App
+  name: App
+  nameWithType: App
+  fullName: Calendar.App
+- uid: Calendar.ToDoEntities
+  commentId: T:Calendar.ToDoEntities
+  name: ToDoEntities
+  nameWithType: ToDoEntities
+  fullName: Calendar.ToDoEntities
+- uid: Calendar.MainWindow
+  commentId: T:Calendar.MainWindow
+  name: MainWindow
+  nameWithType: MainWindow
+  fullName: Calendar.MainWindow

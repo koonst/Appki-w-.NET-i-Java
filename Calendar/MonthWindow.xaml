@@ -1,0 +1,41 @@
+﻿<Window x:Class="Calendar.MonthWindow"
+        xmlns="http://schemas.microsoft.com/winfx/2006/xaml/presentation"
+        xmlns:x="http://schemas.microsoft.com/winfx/2006/xaml"
+        xmlns:d="http://schemas.microsoft.com/expression/blend/2008"
+        xmlns:mc="http://schemas.openxmlformats.org/markup-compatibility/2006"
+        xmlns:local="clr-namespace:Calendar"
+        mc:Ignorable="d"
+        ResizeMode="NoResize"
+        Title="Calendar" Height="530" Width="816" Loaded="MonthWindow_Loaded">
+    <Grid>
+        <Border BorderBrush="Black" BorderThickness="1" Background="#FFBCFFCD" Width="816" Height="494" HorizontalAlignment="Center" VerticalAlignment="Center">
+            <WrapPanel x:Name="daycontainer" Background="#FFBCFFCD" Margin="14,114,10,-32" Width="790" Height="390"/>
+        </Border>
+        <Border x:Name="border" BorderThickness="1" Margin="10,405,528,5" Background="#FF9EE8E0"/>
+        <Label x:Name="Monday" Content="Sunday" HorizontalAlignment="Left" Margin="10,53,0,0" Background="#FF51E27B" FontSize="14" FontWeight="Bold" Width="106" HorizontalContentAlignment="Center" VerticalContentAlignment="Center" Height="49" VerticalAlignment="Top"/>
+        <Label x:Name="Monday_Copy" Content="Monday" HorizontalAlignment="Left" Margin="122,53,0,0" VerticalAlignment="Top" Background="#FF51E27B" FontSize="14" FontWeight="Bold" Width="106" HorizontalContentAlignment="Center" Height="49" VerticalContentAlignment="Center"/>
+        <Label x:Name="Monday_Copy1" Content="Tuesday" HorizontalAlignment="Left" Margin="235,53,0,0" VerticalAlignment="Top" Background="#FF51E27B" FontSize="14" FontWeight="Bold" Width="106" HorizontalContentAlignment="Center" Height="49" VerticalContentAlignment="Center"/>
+        <Label x:Name="Monday_Copy2" Content="Wednesday" HorizontalAlignment="Left" Margin="346,53,0,0" VerticalAlignment="Top" Background="#FF51E27B" FontSize="14" FontWeight="Bold" Width="106" HorizontalContentAlignment="Center" Height="49" VerticalContentAlignment="Center"/>
+        <Label x:Name="Monday_Copy3" Content="Thursday" HorizontalAlignment="Left" Margin="458,53,0,0" VerticalAlignment="Top" Background="#FF51E27B" FontSize="14" FontWeight="Bold" Width="106" HorizontalContentAlignment="Center" Height="49" VerticalContentAlignment="Center"/>
+        <Label x:Name="Monday_Copy4" Content="Friday" HorizontalAlignment="Left" Margin="570,53,0,0" VerticalAlignment="Top" Background="#FF51E27B" FontSize="14" FontWeight="Bold" Width="106" HorizontalContentAlignment="Center" Height="49" VerticalContentAlignment="Center"/>
+        <Label x:Name="Monday_Copy5" Content="Saturday" HorizontalAlignment="Left" Margin="682,53,0,0" VerticalAlignment="Top" Background="#FF51E27B" FontSize="14" FontWeight="Bold" Width="106" HorizontalContentAlignment="Center" Height="49" VerticalContentAlignment="Center"/>
+        <Button x:Name="PrevBut" Content="Previous" Margin="615,421,0,0" Click="PrevBut_Click" Background="#FF51E27B" FontSize="14" FontWeight="Bold" Width="85" Height="27" VerticalAlignment="Top" HorizontalAlignment="Left"/>
+        <Button x:Name="NextBut" Content="Next" Margin="704,421,0,0" Click="NextBut_Click" Background="#FF51E27B" FontSize="14" FontWeight="Bold" Height="27" Width="85" HorizontalAlignment="Left" VerticalAlignment="Top"/>
+        <StackPanel Height="454" VerticalAlignment="Center" HorizontalAlignment="Left" Width="800"/>
+        <StackPanel/>
+        <Label x:Name="MonthYear" Content="Year Month" HorizontalAlignment="Left" Margin="10,10,0,0" VerticalAlignment="Top" Background="{x:Null}" FontSize="14" FontWeight="Bold" Width="278" HorizontalContentAlignment="Left" Height="30" VerticalContentAlignment="Center"/>
+        <Label Content="Your City:" HorizontalAlignment="Left" Margin="458,11,0,0" VerticalAlignment="Top" Width="78" FontWeight="Bold" FontSize="14"/>
+        <TextBox x:Name="txtCity" HorizontalAlignment="Left" Margin="536,15,0,0" TextWrapping="Wrap" Text="Wroclaw" VerticalAlignment="Top" Width="120" FontSize="14" FontWeight="Bold" Background="#FFBCFFCD" BorderBrush="{x:Null}"/>
+        <Button x:Name="btnCity" Content="Change" HorizontalAlignment="Left" Margin="735,15,0,0" VerticalAlignment="Top" BorderBrush="#FFBCFFCD" FontWeight="Bold" Background="#FFBCFFCD" Click="ChangeCity_Click"/>
+        <Label Content="Weather:" HorizontalAlignment="Left" Margin="10,406,0,0" VerticalAlignment="Top" Width="78" FontWeight="Bold" Foreground="#FF4037B5" FontSize="14"/>
+        <Label x:Name="labDetails" Content="Details" HorizontalAlignment="Left" Margin="13,458,0,0" VerticalAlignment="Top" Width="204" FontWeight="Bold" Foreground="#FF110B61"/>
+        <Label x:Name="labTemperature" Content="Temp" HorizontalAlignment="Left" Margin="13,432,0,0" VerticalAlignment="Top" Width="78" FontWeight="Bold" Foreground="#FF110B61"/>
+        <Label Content="Wind Speed:" HorizontalAlignment="Left" Margin="137,406,0,0" VerticalAlignment="Top" Width="86" FontWeight="Bold" Foreground="#FF110B61"/>
+        <Label Content="Pressure:" HorizontalAlignment="Left" Margin="136,432,0,0" VerticalAlignment="Top" Width="78" FontWeight="Bold" Foreground="#FF110B61"/>
+        <Label x:Name="labWind" Content="N/A" HorizontalAlignment="Left" Margin="215,406,0,0" VerticalAlignment="Top" Width="78" FontWeight="Bold" Foreground="#FF110B61"/>
+        <Label x:Name="labPressure" Content="N/A" HorizontalAlignment="Left" Margin="194,432,0,0" VerticalAlignment="Top" Width="78" FontWeight="Bold" Foreground="#FF110B61"/>
+        <Label Content="Humidity:" HorizontalAlignment="Left" Margin="136,458,0,0" VerticalAlignment="Top" Width="78" FontWeight="Bold" Foreground="#FF110B61"/>
+        <Label x:Name="labHumidity" Content="N/A" HorizontalAlignment="Left" Margin="199,458,0,0" VerticalAlignment="Top" Width="78" FontWeight="Bold" Foreground="#FF110B61"/>
+
+    </Grid>
+</Window>

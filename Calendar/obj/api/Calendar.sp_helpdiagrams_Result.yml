@@ -1,0 +1,537 @@
+### YamlMime:ManagedReference
+items:
+- uid: Calendar.sp_helpdiagrams_Result
+  commentId: T:Calendar.sp_helpdiagrams_Result
+  id: sp_helpdiagrams_Result
+  parent: Calendar
+  children:
+  - Calendar.sp_helpdiagrams_Result.Database
+  - Calendar.sp_helpdiagrams_Result.ID
+  - Calendar.sp_helpdiagrams_Result.Name
+  - Calendar.sp_helpdiagrams_Result.Owner
+  - Calendar.sp_helpdiagrams_Result.OwnerID
+  langs:
+  - csharp
+  - vb
+  name: sp_helpdiagrams_Result
+  nameWithType: sp_helpdiagrams_Result
+  fullName: Calendar.sp_helpdiagrams_Result
+  type: Class
+  source:
+    id: sp_helpdiagrams_Result
+    path: D:\pwr\App_.NET_i_Java\Calendar\Calendar\sp_helpdiagrams_Result.cs
+    startLine: 13
+  assemblies:
+  - Calendar
+  namespace: Calendar
+  syntax:
+    content: public class sp_helpdiagrams_Result
+    content.vb: Public Class sp_helpdiagrams_Result
+  inheritance:
+  - System.Object
+  inheritedMembers:
+  - System.Object.ToString
+  - System.Object.Equals(System.Object)
+  - System.Object.Equals(System.Object,System.Object)
+  - System.Object.ReferenceEquals(System.Object,System.Object)
+  - System.Object.GetHashCode
+  - System.Object.GetType
+  - System.Object.MemberwiseClone
+  modifiers.csharp:
+  - public
+  - class
+  modifiers.vb:
+  - Public
+  - Class
+- uid: Calendar.sp_helpdiagrams_Result.Database
+  commentId: P:Calendar.sp_helpdiagrams_Result.Database
+  id: Database
+  parent: Calendar.sp_helpdiagrams_Result
+  langs:
+  - csharp
+  - vb
+  name: Database
+  nameWithType: sp_helpdiagrams_Result.Database
+  fullName: Calendar.sp_helpdiagrams_Result.Database
+  type: Property
+  source:
+    id: Database
+    path: D:\pwr\App_.NET_i_Java\Calendar\Calendar\sp_helpdiagrams_Result.cs
+    startLine: 15
+  assemblies:
+  - Calendar
+  namespace: Calendar
+  syntax:
+    content: public string Database { get; set; }
+    parameters: []
+    return:
+      type: System.String
+    content.vb: Public Property Database As String
+  overload: Calendar.sp_helpdiagrams_Result.Database*
+  modifiers.csharp:
+  - public
+  - get
+  - set
+  modifiers.vb:
+  - Public
+- uid: Calendar.sp_helpdiagrams_Result.Name
+  commentId: P:Calendar.sp_helpdiagrams_Result.Name
+  id: Name
+  parent: Calendar.sp_helpdiagrams_Result
+  langs:
+  - csharp
+  - vb
+  name: Name
+  nameWithType: sp_helpdiagrams_Result.Name
+  fullName: Calendar.sp_helpdiagrams_Result.Name
+  type: Property
+  source:
+    id: Name
+    path: D:\pwr\App_.NET_i_Java\Calendar\Calendar\sp_helpdiagrams_Result.cs
+    startLine: 16
+  assemblies:
+  - Calendar
+  namespace: Calendar
+  syntax:
+    content: public string Name { get; set; }
+    parameters: []
+    return:
+      type: System.String
+    content.vb: Public Property Name As String
+  overload: Calendar.sp_helpdiagrams_Result.Name*
+  modifiers.csharp:
+  - public
+  - get
+  - set
+  modifiers.vb:
+  - Public
+- uid: Calendar.sp_helpdiagrams_Result.ID
+  commentId: P:Calendar.sp_helpdiagrams_Result.ID
+  id: ID
+  parent: Calendar.sp_helpdiagrams_Result
+  langs:
+  - csharp
+  - vb
+  name: ID
+  nameWithType: sp_helpdiagrams_Result.ID
+  fullName: Calendar.sp_helpdiagrams_Result.ID
+  type: Property
+  source:
+    id: ID
+    path: D:\pwr\App_.NET_i_Java\Calendar\Calendar\sp_helpdiagrams_Result.cs
+    startLine: 17
+  assemblies:
+  - Calendar
+  namespace: Calendar
+  syntax:
+    content: public int ID { get; set; }
+    parameters: []
+    return:
+      type: System.Int32
+    content.vb: Public Property ID As Integer
+  overload: Calendar.sp_helpdiagrams_Result.ID*
+  modifiers.csharp:
+  - public
+  - get
+  - set
+  modifiers.vb:
+  - Public
+- uid: Calendar.sp_helpdiagrams_Result.Owner
+  commentId: P:Calendar.sp_helpdiagrams_Result.Owner
+  id: Owner
+  parent: Calendar.sp_helpdiagrams_Result
+  langs:
+  - csharp
+  - vb
+  name: Owner
+  nameWithType: sp_helpdiagrams_Result.Owner
+  fullName: Calendar.sp_helpdiagrams_Result.Owner
+  type: Property
+  source:
+    id: Owner
+    path: D:\pwr\App_.NET_i_Java\Calendar\Calendar\sp_helpdiagrams_Result.cs
+    startLine: 18
+  assemblies:
+  - Calendar
+  namespace: Calendar
+  syntax:
+    content: public string Owner { get; set; }
+    parameters: []
+    return:
+      type: System.String
+    content.vb: Public Property Owner As String
+  overload: Calendar.sp_helpdiagrams_Result.Owner*
+  modifiers.csharp:
+  - public
+  - get
+  - set
+  modifiers.vb:
+  - Public
+- uid: Calendar.sp_helpdiagrams_Result.OwnerID
+  commentId: P:Calendar.sp_helpdiagrams_Result.OwnerID
+  id: OwnerID
+  parent: Calendar.sp_helpdiagrams_Result
+  langs:
+  - csharp
+  - vb
+  name: OwnerID
+  nameWithType: sp_helpdiagrams_Result.OwnerID
+  fullName: Calendar.sp_helpdiagrams_Result.OwnerID
+  type: Property
+  source:
+    id: OwnerID
+    path: D:\pwr\App_.NET_i_Java\Calendar\Calendar\sp_helpdiagrams_Result.cs
+    startLine: 19
+  assemblies:
+  - Calendar
+  namespace: Calendar
+  syntax:
+    content: public int OwnerID { get; set; }
+    parameters: []
+    return:
+      type: System.Int32
+    content.vb: Public Property OwnerID As Integer
+  overload: Calendar.sp_helpdiagrams_Result.OwnerID*
+  modifiers.csharp:
+  - public
+  - get
+  - set
+  modifiers.vb:
+  - Public
+references:
+- uid: Calendar
+  commentId: N:Calendar
+  name: Calendar
+  nameWithType: Calendar
+  fullName: Calendar
+- uid: System.Object
+  commentId: T:System.Object
+  parent: System
+  isExternal: true
+  name: Object
+  nameWithType: Object
+  fullName: System.Object
+- uid: System.Object.ToString
+  commentId: M:System.Object.ToString
+  parent: System.Object
+  isExternal: true
+  name: ToString()
+  nameWithType: Object.ToString()
+  fullName: System.Object.ToString()
+  spec.csharp:
+  - uid: System.Object.ToString
+    name: ToString
+    nameWithType: Object.ToString
+    fullName: System.Object.ToString
+    isExternal: true
+  - name: (
+    nameWithType: (
+    fullName: (
+  - name: )
+    nameWithType: )
+    fullName: )
+  spec.vb:
+  - uid: System.Object.ToString
+    name: ToString
+    nameWithType: Object.ToString
+    fullName: System.Object.ToString
+    isExternal: true
+  - name: (
+    nameWithType: (
+    fullName: (
+  - name: )
+    nameWithType: )
+    fullName: )
+- uid: System.Object.Equals(System.Object)
+  commentId: M:System.Object.Equals(System.Object)
+  parent: System.Object
+  isExternal: true
+  name: Equals(Object)
+  nameWithType: Object.Equals(Object)
+  fullName: System.Object.Equals(System.Object)
+  spec.csharp:
+  - uid: System.Object.Equals(System.Object)
+    name: Equals
+    nameWithType: Object.Equals
+    fullName: System.Object.Equals
+    isExternal: true
+  - name: (
+    nameWithType: (
+    fullName: (
+  - uid: System.Object
+    name: Object
+    nameWithType: Object
+    fullName: System.Object
+    isExternal: true
+  - name: )
+    nameWithType: )
+    fullName: )
+  spec.vb:
+  - uid: System.Object.Equals(System.Object)
+    name: Equals
+    nameWithType: Object.Equals
+    fullName: System.Object.Equals
+    isExternal: true
+  - name: (
+    nameWithType: (
+    fullName: (
+  - uid: System.Object
+    name: Object
+    nameWithType: Object
+    fullName: System.Object
+    isExternal: true
+  - name: )
+    nameWithType: )
+    fullName: )
+- uid: System.Object.Equals(System.Object,System.Object)
+  commentId: M:System.Object.Equals(System.Object,System.Object)
+  parent: System.Object
+  isExternal: true
+  name: Equals(Object, Object)
+  nameWithType: Object.Equals(Object, Object)
+  fullName: System.Object.Equals(System.Object, System.Object)
+  spec.csharp:
+  - uid: System.Object.Equals(System.Object,System.Object)
+    name: Equals
+    nameWithType: Object.Equals
+    fullName: System.Object.Equals
+    isExternal: true
+  - name: (
+    nameWithType: (
+    fullName: (
+  - uid: System.Object
+    name: Object
+    nameWithType: Object
+    fullName: System.Object
+    isExternal: true
+  - name: ', '
+    nameWithType: ', '
+    fullName: ', '
+  - uid: System.Object
+    name: Object
+    nameWithType: Object
+    fullName: System.Object
+    isExternal: true
+  - name: )
+    nameWithType: )
+    fullName: )
+  spec.vb:
+  - uid: System.Object.Equals(System.Object,System.Object)
+    name: Equals
+    nameWithType: Object.Equals
+    fullName: System.Object.Equals
+    isExternal: true
+  - name: (
+    nameWithType: (
+    fullName: (
+  - uid: System.Object
+    name: Object
+    nameWithType: Object
+    fullName: System.Object
+    isExternal: true
+  - name: ', '
+    nameWithType: ', '
+    fullName: ', '
+  - uid: System.Object
+    name: Object
+    nameWithType: Object
+    fullName: System.Object
+    isExternal: true
+  - name: )
+    nameWithType: )
+    fullName: )
+- uid: System.Object.ReferenceEquals(System.Object,System.Object)
+  commentId: M:System.Object.ReferenceEquals(System.Object,System.Object)
+  parent: System.Object
+  isExternal: true
+  name: ReferenceEquals(Object, Object)
+  nameWithType: Object.ReferenceEquals(Object, Object)
+  fullName: System.Object.ReferenceEquals(System.Object, System.Object)
+  spec.csharp:
+  - uid: System.Object.ReferenceEquals(System.Object,System.Object)
+    name: ReferenceEquals
+    nameWithType: Object.ReferenceEquals
+    fullName: System.Object.ReferenceEquals
+    isExternal: true
+  - name: (
+    nameWithType: (
+    fullName: (
+  - uid: System.Object
+    name: Object
+    nameWithType: Object
+    fullName: System.Object
+    isExternal: true
+  - name: ', '
+    nameWithType: ', '
+    fullName: ', '
+  - uid: System.Object
+    name: Object
+    nameWithType: Object
+    fullName: System.Object
+    isExternal: true
+  - name: )
+    nameWithType: )
+    fullName: )
+  spec.vb:
+  - uid: System.Object.ReferenceEquals(System.Object,System.Object)
+    name: ReferenceEquals
+    nameWithType: Object.ReferenceEquals
+    fullName: System.Object.ReferenceEquals
+    isExternal: true
+  - name: (
+    nameWithType: (
+    fullName: (
+  - uid: System.Object
+    name: Object
+    nameWithType: Object
+    fullName: System.Object
+    isExternal: true
+  - name: ', '
+    nameWithType: ', '
+    fullName: ', '
+  - uid: System.Object
+    name: Object
+    nameWithType: Object
+    fullName: System.Object
+    isExternal: true
+  - name: )
+    nameWithType: )
+    fullName: )
+- uid: System.Object.GetHashCode
+  commentId: M:System.Object.GetHashCode
+  parent: System.Object
+  isExternal: true
+  name: GetHashCode()
+  nameWithType: Object.GetHashCode()
+  fullName: System.Object.GetHashCode()
+  spec.csharp:
+  - uid: System.Object.GetHashCode
+    name: GetHashCode
+    nameWithType: Object.GetHashCode
+    fullName: System.Object.GetHashCode
+    isExternal: true
+  - name: (
+    nameWithType: (
+    fullName: (
+  - name: )
+    nameWithType: )
+    fullName: )
+  spec.vb:
+  - uid: System.Object.GetHashCode
+    name: GetHashCode
+    nameWithType: Object.GetHashCode
+    fullName: System.Object.GetHashCode
+    isExternal: true
+  - name: (
+    nameWithType: (
+    fullName: (
+  - name: )
+    nameWithType: )
+    fullName: )
+- uid: System.Object.GetType
+  commentId: M:System.Object.GetType
+  parent: System.Object
+  isExternal: true
+  name: GetType()
+  nameWithType: Object.GetType()
+  fullName: System.Object.GetType()
+  spec.csharp:
+  - uid: System.Object.GetType
+    name: GetType
+    nameWithType: Object.GetType
+    fullName: System.Object.GetType
+    isExternal: true
+  - name: (
+    nameWithType: (
+    fullName: (
+  - name: )
+    nameWithType: )
+    fullName: )
+  spec.vb:
+  - uid: System.Object.GetType
+    name: GetType
+    nameWithType: Object.GetType
+    fullName: System.Object.GetType
+    isExternal: true
+  - name: (
+    nameWithType: (
+    fullName: (
+  - name: )
+    nameWithType: )
+    fullName: )
+- uid: System.Object.MemberwiseClone
+  commentId: M:System.Object.MemberwiseClone
+  parent: System.Object
+  isExternal: true
+  name: MemberwiseClone()
+  nameWithType: Object.MemberwiseClone()
+  fullName: System.Object.MemberwiseClone()
+  spec.csharp:
+  - uid: System.Object.MemberwiseClone
+    name: MemberwiseClone
+    nameWithType: Object.MemberwiseClone
+    fullName: System.Object.MemberwiseClone
+    isExternal: true
+  - name: (
+    nameWithType: (
+    fullName: (
+  - name: )
+    nameWithType: )
+    fullName: )
+  spec.vb:
+  - uid: System.Object.MemberwiseClone
+    name: MemberwiseClone
+    nameWithType: Object.MemberwiseClone
+    fullName: System.Object.MemberwiseClone
+    isExternal: true
+  - name: (
+    nameWithType: (
+    fullName: (
+  - name: )
+    nameWithType: )
+    fullName: )
+- uid: System
+  commentId: N:System
+  isExternal: true
+  name: System
+  nameWithType: System
+  fullName: System
+- uid: Calendar.sp_helpdiagrams_Result.Database*
+  commentId: Overload:Calendar.sp_helpdiagrams_Result.Database
+  name: Database
+  nameWithType: sp_helpdiagrams_Result.Database
+  fullName: Calendar.sp_helpdiagrams_Result.Database
+- uid: System.String
+  commentId: T:System.String
+  parent: System
+  isExternal: true
+  name: String
+  nameWithType: String
+  fullName: System.String
+- uid: Calendar.sp_helpdiagrams_Result.Name*
+  commentId: Overload:Calendar.sp_helpdiagrams_Result.Name
+  name: Name
+  nameWithType: sp_helpdiagrams_Result.Name
+  fullName: Calendar.sp_helpdiagrams_Result.Name
+- uid: Calendar.sp_helpdiagrams_Result.ID*
+  commentId: Overload:Calendar.sp_helpdiagrams_Result.ID
+  name: ID
+  nameWithType: sp_helpdiagrams_Result.ID
+  fullName: Calendar.sp_helpdiagrams_Result.ID
+- uid: System.Int32
+  commentId: T:System.Int32
+  parent: System
+  isExternal: true
+  name: Int32
+  nameWithType: Int32
+  fullName: System.Int32
+- uid: Calendar.sp_helpdiagrams_Result.Owner*
+  commentId: Overload:Calendar.sp_helpdiagrams_Result.Owner
+  name: Owner
+  nameWithType: sp_helpdiagrams_Result.Owner
+  fullName: Calendar.sp_helpdiagrams_Result.Owner
+- uid: Calendar.sp_helpdiagrams_Result.OwnerID*
+  commentId: Overload:Calendar.sp_helpdiagrams_Result.OwnerID
+  name: OwnerID
+  nameWithType: sp_helpdiagrams_Result.OwnerID
+  fullName: Calendar.sp_helpdiagrams_Result.OwnerID

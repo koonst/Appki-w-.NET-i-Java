@@ -1,0 +1,219 @@
+<?xml version="1.0"?>
+<doc>
+    <assembly>
+        <name>Calendar</name>
+    </assembly>
+    <members>
+        <member name="T:Calendar.MonthWindow">
+            <summary>
+            MonthWindow
+            </summary>
+        </member>
+        <member name="F:Calendar.MonthWindow.APIKey">
+            APIKey
+             
+            to get acces to json weather file
+        </member>
+        <member name="M:Calendar.MonthWindow.getWeather">
+            Gets weather from website openweathermap.org using APIKey.
+            
+            Uses txtCity label content to get access to wanted weather properties.
+            Update labDetails, labWind, labPressure, labHumidity, labTemperature labels contents
+        </member>
+        <member name="F:Calendar.MonthWindow.st_year">
+            global variable to use it for database of todo lists as a date
+            
+            public static int st_day is in UserControlDays class
+        </member>
+        <member name="F:Calendar.MonthWindow.st_month">
+            global variable to use it for database of todo lists as a date
+            
+            public static int st_day is in UserControlDays class
+        </member>
+        <member name="F:Calendar.MonthWindow.month">
+            global variable to use it as current displayed month
+        </member>
+        <member name="F:Calendar.MonthWindow.year">
+            global variable of displayed year
+        </member>
+        <member name="F:Calendar.MonthWindow.months">
+            array for months names depending on their number
+        </member>
+        <member name="M:Calendar.MonthWindow.#ctor">
+            
+        </member>
+        <member name="M:Calendar.MonthWindow.MonthWindow_Loaded(System.Object,System.Windows.RoutedEventArgs)">
+            Loading application window with calendar and weather
+        </member>
+        <member name="M:Calendar.MonthWindow.monthload(System.Int32,System.Int32)">
+            Displays month in application window. Create table of days depends on day of week
+            
+            @param neededmonth month that will be used
+            @param neededyear year that will be used
+        </member>
+        <member name="M:Calendar.MonthWindow.displaDays">
+            Displays current month in calendar window.
+            
+            Uses monthload() function with current year and month parameters
+        </member>
+        <member name="M:Calendar.MonthWindow.PrevBut_Click(System.Object,System.Windows.RoutedEventArgs)">
+            Displays previous month
+            
+            Using global variables int month, year, displays month precending to what was displayed before
+        </member>
+        <member name="M:Calendar.MonthWindow.ChangeCity_Click(System.Object,System.Windows.RoutedEventArgs)">
+            Service button reload weather properties for another city
+            
+            Just uses getWeather function
+        </member>
+        <member name="M:Calendar.MonthWindow.NextBut_Click(System.Object,System.Windows.RoutedEventArgs)">
+            Displays next month
+            
+            Using global variables int month, year, displays month next to what was displayed before
+        </member>
+        <member name="M:Calendar.MonthWindow.InitializeComponent">
+            <summary>
+            InitializeComponent
+            </summary>
+        </member>
+        <member name="T:Calendar.Task">
+            class that passes to tadetable member
+            
+            int id, DateTime time, string prop, DateTime date
+        </member>
+        <member name="T:Calendar.UserControlBlank">
+            blank box to take place of days which are before first day of month but are in same week
+            <summary>
+            UserControlBlank
+            </summary>
+        </member>
+        <member name="M:Calendar.UserControlBlank.#ctor">
+            
+        </member>
+        <member name="M:Calendar.UserControlBlank.InitializeComponent">
+            <summary>
+            InitializeComponent
+            </summary>
+        </member>
+        <member name="T:Calendar.UserControlDays">
+            <summary>
+            Logika interakcji dla klasy UserControlDays.xaml
+            </summary>
+            <summary>
+            UserControlDays
+            </summary>
+        </member>
+        <member name="F:Calendar.UserControlDays.st_day">
+            global variable to use it for database of todo lists as a date
+        </member>
+        <member name="M:Calendar.UserControlDays.#ctor">
+            
+        </member>
+        <member name="M:Calendar.UserControlDays.days(System.Int32)">
+            Display day box according to a day number
+            
+            @param numday
+        </member>
+        <member name="M:Calendar.UserControlDays.UserControlDays_doubleClick(System.Object,System.Windows.Input.MouseButtonEventArgs)">
+            Servise mouse double click on day box to open ToDoList window
+        </member>
+        <member name="M:Calendar.UserControlDays.InitializeComponent">
+            <summary>
+            InitializeComponent
+            </summary>
+        </member>
+        <member name="T:Calendar.Weatherinfo">
+            Class that is used for converting date from json file
+        </member>
+        <member name="T:Calendar.App">
+            <summary>
+            Logika interakcji dla klasy App.xaml
+            </summary>
+            <summary>
+            App
+            </summary>
+        </member>
+        <member name="M:Calendar.App.InitializeComponent">
+            <summary>
+            InitializeComponent
+            </summary>
+        </member>
+        <member name="M:Calendar.App.Main">
+            <summary>
+            Application Entry Point.
+            </summary>
+        </member>
+        <member name="T:Calendar.MainWindow">
+            ToDo List window
+            <summary>
+            MainWindow
+            </summary>
+        </member>
+        <member name="F:Calendar.MainWindow.chosendate">
+            variable that used for remembering date from calendar window
+        </member>
+        <member name="F:Calendar.MainWindow.database">
+            variable for connecting with database
+        </member>
+        <member name="F:Calendar.MainWindow.modelT">
+            variable that passes to database member (has id, time, date, properties) to allow updating database in code
+        </member>
+        <member name="M:Calendar.MainWindow.#ctor">
+            ToDoList window
+        </member>
+        <member name="M:Calendar.MainWindow.btnCancel_Click(System.Object,System.Windows.RoutedEventArgs)">
+             Clear txtTime label and txtProperties label fields
+            
+             Uses Clear() function
+        </member>
+        <member name="M:Calendar.MainWindow.Clear">
+            Clear modelT variable content, txtTime label and txtProperties label fields
+            
+            Also changes Save button content from "Update" to "Save".
+            Desables Delete button.
+            Actually does not clear modelT, just change its id to 0 to mark it as not existing in datetable member
+        </member>
+        <member name="M:Calendar.MainWindow.Update">
+            Updates datagrid table which consists of datetable members from chosen day 
+        </member>
+        <member name="M:Calendar.MainWindow.MainWindow_Loaded(System.Object,System.Windows.RoutedEventArgs)">
+            Loading ToDoList window
+            
+            Just uses Clear() and Update() functions
+        </member>
+        <member name="M:Calendar.MainWindow.btnSave_Click(System.Object,System.Windows.RoutedEventArgs)">
+            Saves data from txtTime and txtProperties labels as new datetable member or updates old, if it already has id
+        </member>
+        <member name="M:Calendar.MainWindow.dataGrid1_MouseDoubleClick(System.Object,System.Windows.Input.MouseButtonEventArgs)">
+            Servise double click on member in datagrid table to allow updating datetable member
+            
+            Changes txtTime and txtProperties labels according to chosen member.
+            Record member date (id, time, date, properties) to variable modelT.
+            Changes Save button content from "Save" to "Update", enables Delete button
+        </member>
+        <member name="M:Calendar.MainWindow.btnDelete_Click(System.Object,System.Windows.RoutedEventArgs)">
+            Removes datetable member from database and update ToDoList window
+        </member>
+        <member name="M:Calendar.MainWindow.InitializeComponent">
+            <summary>
+            InitializeComponent
+            </summary>
+        </member>
+        <member name="T:Calendar.Properties.Resources">
+            <summary>
+              Silnie typizowana klasa zasobów do wyszukiwania zlokalizowanych ciągów itd.
+            </summary>
+        </member>
+        <member name="P:Calendar.Properties.Resources.ResourceManager">
+            <summary>
+              Zwraca buforowane wystąpienie składnika ResourceManager używane przez tę klasę.
+            </summary>
+        </member>
+        <member name="P:Calendar.Properties.Resources.Culture">
+            <summary>
+              Przesłania właściwość CurrentUICulture bieżącego wątku dla wszystkich
+              przypadków przeszukiwania zasobów za pomocą tej silnie typizowanej klasy zasobów.
+            </summary>
+        </member>
+    </members>
+</doc>

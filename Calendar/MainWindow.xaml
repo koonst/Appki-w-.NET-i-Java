@@ -1,0 +1,41 @@
+﻿<Window
+        xmlns="http://schemas.microsoft.com/winfx/2006/xaml/presentation"
+        xmlns:x="http://schemas.microsoft.com/winfx/2006/xaml"
+        xmlns:d="http://schemas.microsoft.com/expression/blend/2008"
+        xmlns:mc="http://schemas.openxmlformats.org/markup-compatibility/2006"
+        xmlns:local="clr-namespace:Calendar"
+        xmlns:EntityClient="clr-namespace:System.Data.Entity.Core.EntityClient;assembly=EntityFramework" x:Class="Calendar.MainWindow"
+        mc:Ignorable="d"
+        Title="ToDoList" Height="450" Width="800"  Loaded="MainWindow_Loaded">
+    <Grid Margin="0,0,0,-6">
+        <Grid.Background>
+            <LinearGradientBrush EndPoint="0.5,1" StartPoint="0.5,0">
+                <GradientStop Color="#FFBCFFCD"/>
+                <GradientStop Color="#FF51E27B" Offset="1"/>
+            </LinearGradientBrush>
+        </Grid.Background>
+        <Label x:Name="Time" Content="Time&#xA;" Margin="74,50,0,0" AutomationProperties.Name="Time" FontSize="14" FontWeight="Bold" Foreground="#FF205D31" Height="33" VerticalAlignment="Top" HorizontalAlignment="Left" Width="67"/>
+        <TextBox x:Name="txtTime" TextWrapping="Wrap" Margin="161,53,0,0" FontSize="14" FontWeight="Bold" Height="30" VerticalAlignment="Top" HorizontalAlignment="Left" Width="123" Background="#FFD7FFE3" Foreground="#FF205D31"/>
+        <Button x:Name="btnSave" Content="Save" Margin="36,281,0,0" BorderBrush="#FF05516B" Click="btnSave_Click" HorizontalAlignment="Left" Width="105" Height="50" VerticalAlignment="Top" Background="#FF32A252" FontSize="16" FontWeight="Bold" Foreground="#FF47E056"/>
+        <DataGrid x:Name="dataGrid1" d:ItemsSource="{d:SampleData ItemCount=5}" RenderTransformOrigin="0.498,0.479" Margin="370,50,0,0" HorizontalAlignment="Left" Width="407" Height="296" VerticalAlignment="Top" Background="{x:Null}" BorderBrush="{x:Null}" Foreground="#FF0E6F2A" IsSynchronizedWithCurrentItem="True" MouseDoubleClick="dataGrid1_MouseDoubleClick" AutoGenerateColumns="False">
+            <DataGrid.Columns>
+                <DataGridTextColumn Binding="{Binding time}" HeaderStringFormat="Time" Header="Time" CanUserResize="False" IsReadOnly="True" MaxWidth="160" />
+                <DataGridTextColumn Binding="{Binding prop}" HeaderStringFormat="Properties" Header="Properties" CanUserResize="False" MinWidth="290" IsReadOnly="True"/>
+                <DataGridTextColumn Binding="{Binding date}" HeaderStringFormat="date" Header="date" Visibility="Hidden" />
+                <DataGridTextColumn Binding="{Binding id}" HeaderStringFormat="TaskID" Header="TaskID" Visibility="Hidden" />
+            </DataGrid.Columns>
+        </DataGrid>
+        <Label Content="Properties&#xA;&#xA;" Margin="73,98,0,0" FontSize="14" FontWeight="Bold" Foreground="#FF205D31" Height="32" VerticalAlignment="Top" HorizontalAlignment="Left" Width="83"/>
+        <TextBox x:Name="txtProperties" TextWrapping="Wrap" Margin="161,101,0,0" BorderBrush="#FF0C2794" FontWeight="Bold" Foreground="#FF205D31" HorizontalAlignment="Left" Width="201" Height="136" VerticalAlignment="Top">
+            <TextBox.Background>
+                <LinearGradientBrush EndPoint="0.5,1" StartPoint="0.5,0">
+                    <GradientStop Color="#FF51E27B"/>
+                    <GradientStop Color="#FFBCFFCD" Offset="1"/>
+                </LinearGradientBrush>
+            </TextBox.Background>
+        </TextBox>
+        <Button x:Name="btnDelete" Content="Delete" Margin="146,281,0,0" BorderBrush="#FF05516B" HorizontalAlignment="Left" Width="105" Height="50" VerticalAlignment="Top" Click="btnDelete_Click" Background="#FF32A252" FontSize="16" FontWeight="Bold" Foreground="#FF47E056"/>
+        <Button x:Name="btnCancel" Content="Cancel" Margin="257,281,0,0" BorderBrush="#FF05516B" Click="btnCancel_Click" Height="50" VerticalAlignment="Top" HorizontalAlignment="Left" Width="105" Background="#FF32A252" FontSize="16" FontWeight="Bold" Foreground="#FF47E056"/>
+
+    </Grid>
+</Window>
