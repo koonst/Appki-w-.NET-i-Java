@@ -4,17 +4,17 @@
 winexe
 C#
 .cs
-D:\pwr\App_.NET_i_Java\Calendar\Calendar\obj\Debug\
+c:\Users\koons\Calendar\Calendar\obj\Debug\
 Calendar
 none
 false
 DEBUG;TRACE
-D:\pwr\App_.NET_i_Java\Calendar\Calendar\App.xaml
+c:\Users\koons\Calendar\Calendar\App.xaml
 4476999988
 2-193252047
-152088973489
-201597713222
+16-284215686
+20-414904462
 MainWindow.xaml;MonthWindow.xaml;UserControlBlank.xaml;UserControlDays.xaml;
 
-False
+True
 
