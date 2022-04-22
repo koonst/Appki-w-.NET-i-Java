@@ -1,10 +1,3 @@
-﻿// T4 code generation is enabled for model 'D:\pwr\App_.NET_i_Java\Calendar\Calendar\DBModels.edmx'. 
-// To enable legacy code generation, change the value of the 'Code Generation Strategy' designer
-// property to 'Legacy ObjectContext'. This property is available in the Properties Window when the model
-// is open in the designer.
-
-// If no context and entity classes have been generated, it may be because you created an empty model but
-// have not yet chosen which version of Entity Framework to use. To generate a context class and entity
-// classes for your model, open the model in the designer, right-click on the designer surface, and
-// select 'Update Model from Database...', 'Generate Database from Model...', or 'Add Code Generation
-// Item...'.
+version https://git-lfs.github.com/spec/v1
+oid sha256:6141057040d374d3d3578d1b8d3a46f960343c51f66c5a54c45ea5023be7eb73
+size 770

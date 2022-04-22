@@ -1,17 +1,3 @@
-﻿using System;
-using System.Collections.Generic;
-using System.Configuration;
-using System.Data;
-using System.Linq;
-using System.Threading.Tasks;
-using System.Windows;
-
-namespace Calendar
-{
-    /// <summary>
-    /// Logika interakcji dla klasy App.xaml
-    /// </summary>
-    public partial class App : Application
-    {
-    }
-}
+version https://git-lfs.github.com/spec/v1
+oid sha256:ad4dc4595099b0dbe7a13fd2770632315985ae87b7bedf524eea5a980bdcf900
+size 347

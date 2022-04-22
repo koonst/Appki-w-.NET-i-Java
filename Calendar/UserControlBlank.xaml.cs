@@ -1,27 +1,3 @@
-﻿using System;
-using System.Collections.Generic;
-using System.Linq;
-using System.Text;
-using System.Threading.Tasks;
-using System.Windows;
-using System.Windows.Controls;
-using System.Windows.Data;
-using System.Windows.Documents;
-using System.Windows.Input;
-using System.Windows.Media;
-using System.Windows.Media.Imaging;
-using System.Windows.Navigation;
-using System.Windows.Shapes;
-
-namespace Calendar
-{
-    /// blank box to take place of days which are before first day of month but are in same week
-    public partial class UserControlBlank : UserControl
-    {
-        ///
-        public UserControlBlank()
-        {
-            InitializeComponent();
-        }
-    }
-}
+version https://git-lfs.github.com/spec/v1
+oid sha256:9600c2725d67d3ef21adcdb887c17509ed693442cf17d23b878d5fda219edbaa
+size 702
